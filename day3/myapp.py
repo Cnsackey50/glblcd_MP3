@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "My is Christopher Nii Sackey, I was born on 22nd october,2000 . Reading is something I love doing."
+    return "My name is Christopher Nii Sackey, I was born on 22nd october,2000 . Reading is something I love doing."
 
 @app.route('/whereami')
 def whereami():
@@ -21,6 +21,7 @@ def my_name(name):
 @app.route('/passion')
 def hob():
     return render_template('passion.html')
+      
 
 if __name__ == '__main__':
     app.run(debug=True)
