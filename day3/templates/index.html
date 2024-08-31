@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Flask App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Brainy website</title>
+    <!--link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"-->
 </head>
 <body>
     <header>
-        <h1>My Flask App</h1>
+        <h1 style="stylesheet href="{{'static', filename='styles.css'}}"><i>About me<i></i></h1>
     </header>
     <nav>
         <a href="/">Home</a>
@@ -17,5 +17,11 @@
     <footer>
         <p>&copy; 2024 My Company</p>
     </footer>
+    <h4>Educational Background</h4>
+    <ul>
+        <li>Graduated from Nyanyano Methodist Basic School</li>
+        <li>Pursued higher education at University of Cape Coast</li>
+        <li>Specialized in Education Mathematics</li>
+    </ul>
 </body>
 </html>

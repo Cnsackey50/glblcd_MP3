@@ -3,16 +3,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "My name is Christopher Nii Sackey, I was born on 22nd october,2000 . Reading is something I love doing."
+    return render_template('index.html')
 
 @app.route('/whereami')
 def whereami():
     return 'Ghana!'
-
-
-@app.route('/g')
-def indexg():
-    return render_template('index.html')
 
 @app.route('/thename/<name>')
 def my_name(name):
@@ -22,6 +17,9 @@ def my_name(name):
 def hob():
     return render_template('passion.html')
       
+@app.route('/song')
+def favsong():
+    return render_template('favsong.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
